@@ -14,15 +14,7 @@
 			<class name="com.qa.opencart.tests.LoginPageTest" />
 		</classes>
 	</test>
-
-	<!--<test name="Reg Page Test">
-		<parameter name="browser" value="edge" />
-
-		<classes>
-			<class name="com.qa.opencart.tests.RegistrationPageTest" />
-		</classes>
-	</test>
-
+	
 	<test name="Accounts Page Test">
 		<parameter name="browser" value="firefox" />
 		
@@ -31,6 +23,13 @@
 		</classes>
 	</test>
 
+	<!--<test name="Reg Page Test">
+		<parameter name="browser" value="edge" />
+
+		<classes>
+			<class name="com.qa.opencart.tests.RegistrationPageTest" />
+		</classes>
+	</test>
 
 	<test name="Search Results Page Test">
 		<parameter name="browser" value="edge" />
