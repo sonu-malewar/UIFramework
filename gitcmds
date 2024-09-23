@@ -1,0 +1,7 @@
+git show = git show HEAD - shows all changes in the last commit
+git show particular_commit_id
+
+git show HEAD~1  check commits before last commit 
+git show HEAD~2
+
+git show HEAD: file path

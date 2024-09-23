@@ -3,21 +3,19 @@
 
 <suite name="Open Cart Regression Suite" verbose="3">
 
+	<listeners>
+		<listener class-name="com.qa.opencart.listners.ExtentReportListener" />
+	</listeners>
 
-	<test name="Login Page Test">
+
+	<test name="Reg Page Test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="browserversion" value="124.0" />
+		<parameter name="testname" value="Reg_page" />
 		<classes>
-			<class name="com.qa.opencart.tests.LoginPageTest" />
+			<class name="com.qa.guru99.tests.RegistrationPageTest" />
 		</classes>
 	</test>
-	
-	<test name="Account Page Test">
-		<classes>
-			<class name="com.qa.opencart.tests.AccountsPageTest" />
-		</classes>
-	</test>
 
-
-
-	
 
 </suite>

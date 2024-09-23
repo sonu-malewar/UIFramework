@@ -1,0 +1,25 @@
+ngrok authtoken tokenname
+ngrok http 8080
+java -jar jenkins.war
+
+docker pull imageName
+docker run
+docker pa -a
+docker-compose up -d up and running container
+docker-compose down   shut down/remove all container
+once image created no need to pull images once again
+docker-compose up -d --scale chrome=4
+docker rm container_id
+docker rmi image_id 
+
+// note : we can't remove images without deleting container
+
+docker system prune -a
+// it delete all the stopped container along with images.
+
+for custmize grid i.e selenoid 
+Steps:  go to folder where dockercompose nad browsers.json are threr
+2.create n/w 
+docker network create selenoid
+3. Run docker-compose file using docker-compose up -d
+

@@ -1,51 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Open Cart Regression Suite" verbose="3" thread-count="5" parallel="tests">
-	<listeners>
-		<listener class-name="com.qa.opencart.listners.TestAllureListener" />
-	</listeners>
-
-
-	<test name="Login Page Test">
-		<parameter name="browser" value="chrome" />
-
-		<classes>
-			<class name="com.qa.opencart.tests.LoginPageTest" />
-		</classes>
-	</test>
+<suite name="Guru99 regression Suite" verbose="3" thread-count="5" parallel="tests">	
 	
-	<test name="Accounts Page Test">
-		<parameter name="browser" value="firefox" />
-		
+
+	<test name="Home Page Test on chrome_124">
+		<parameter name="browser" value="chrome" />
+		<parameter name="browserversion" value="124.0" />
+		<parameter name="testname" value="HomePage" />
 		<classes>
-			<class name="com.qa.opencart.tests.AccountsPageTest" />
+				<class name="com.qa.guru99.tests.HomePageTest" />
 		</classes>
 	</test>
 
-	<!--<test name="Reg Page Test">
-		<parameter name="browser" value="edge" />
+	<test name="Add Customer Test on chrome_90">
+		<parameter name="browser" value="chrome" />
+		<parameter name="browserversion" value="90.0" />
+		<parameter name="testname" value="AddCustomerPageTest" />
 
 		<classes>
-			<class name="com.qa.opencart.tests.RegistrationPageTest" />
+			<class name="com.qa.guru99.tests.AddCustomerPageTest" />
 		</classes>
 	</test>
 
-	<test name="Search Results Page Test">
-		<parameter name="browser" value="edge" />
-		
+	<test name="Add Tariff Plan to Customer for  chrome_124.0">
+		<parameter name="browser" value="chrome" />
+		<parameter name="browserversion" value="124.0" />
+		<parameter name="testname" value="AddTariffPlanCustPageTest" />
 		<classes>
-			<class name="com.qa.opencart.tests.SearchResultsTest" />
+			<class name="com.qa.guru99.tests.AddTariffPlanCustPageTest" />
 		</classes>
 	</test>
 
-	<test name="Product Page Test">
-		<parameter name="browser" value="edge" />
-		
+	<test name="Custmer Access detail page chrome_112.0">
+		<parameter name="browser" value="chrome" />
+		<parameter name="browserversion" value="112.0" />
+		<parameter name="test" value="Cart-Search Result" />
 		<classes>
-			<class name="com.qa.opencart.tests.ProductPageInfoTest" />
+			<class name="com.qa.guru99.tests.CustAccessDetailPageTest" />
 		</classes>
 	</test>
--->
+
+	<test name="Pay Billing page chrome_113">
+		<parameter name="browser" value="chrome" />
+		<parameter name="browserversion" value="113.0" />
+		<parameter name="test" value="Pay Billing" />
+		<classes>
+			<class name="com.qa.guru99.tests.PayBillingPageTest" />
+		</classes>
+	</test>
+
+	<test name="Usage Detail page chrome_114">
+		<parameter name="browser" value="chrome" />
+		<parameter name="browserversion" value="114.0" />
+		<parameter name="test" value="Usage Detail" />
+		<classes>
+			<class name="com.qa.guru99.tests.UsageDetailPageTest" />
+		</classes>
+	</test>
+
 
 </suite>
